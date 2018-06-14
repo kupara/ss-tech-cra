@@ -1,0 +1,50 @@
+@import './variables.sass'
+
+html
+  font-size: 62.5%
+  font-family: 'Lato', sans-serif
+
+.header
+  height: 6rem
+  background-color: $ninja-black
+  margin-bottom: 1rem
+  
+  p
+    margin: 0 auto
+    padding: 1.5rem
+    max-width: 76.8rem
+    color: white
+    font-size: 2.4rem
+
+
+.container
+  width: 76.8rem
+  margin: 1rem auto
+  text-align: center
+
+  @media screen and (max-width: 42.5rem)
+    width: 100%
+    margin: 0
+    padding: 1rem
+  
+  .header
+    font-size: 2.4rem
+    background-color: white 
+
+  .image-header
+    width: 36rem
+    padding: 1rem
+
+  .accordion.styled
+    width: 100%
+    text-align: left
+
+    .title
+      font-size: 2rem
+
+      .ui.dimmer.active
+        opacity: 0.3
+        background-color: rgba(86, 86, 86,.2)
+    
+    .content
+      font-size: 1.6rem
